@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall -pedantic -Wextra -std=gnu99 -msse2 -O3 -ftree-vectorize -ffast-math -mfpmath=sse -funroll-loops -fomit-frame-pointer -m64 fast_tvb/step1_compile_C_code/tvbii_$2.c -o $1/tvb -lgsl -lgslcblas -lm
